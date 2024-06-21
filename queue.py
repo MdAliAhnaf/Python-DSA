@@ -11,7 +11,7 @@ queue.append(3)
 
 print(queue)
 
-
+#unlike stack benefit here is, popping from left (do this operation in constant time unlike with a stack)
 queue.popleft() #pops the first one which got in the list (pop from the left)
 
 print(queue)
