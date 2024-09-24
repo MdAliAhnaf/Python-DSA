@@ -10,7 +10,7 @@ print(arr)
 arr.pop()
 print(arr)
 
-#LIFO(Last persons who got in will eventually get out early)
+#LIFO(Last persons who got in, will get out early)
 
 #unlike pushing and popping, inserting in the middle of an array is a Big(O) of n time operation
 #arr.insert(1,7)

@@ -1,25 +1,22 @@
-# Queues (double ended queue)
-from collections import deque
+# Arrays (called lists in python) dynamic array
+arr = [1, 2, 3]
+print(arr)
 
-queue = deque()
+# Can be used as a stack
+arr.append(4) #push
+arr.append(5)
+print(arr)
 
-print(queue) #empty queue
+arr.pop()
+print(arr)
 
-queue.append(1) #enqueue
-queue.append(2)
-queue.append(3)
+#LIFO(Last persons who got in will eventually get out early)
 
-print(queue)
+#unlike pushing and popping, inserting in the middle of an array is a Big(O) of n time operation
+#arr.insert(1,7)
 
-#unlike stack benefit here is, popping from left (do this operation in constant time unlike with a stack)
-queue.popleft() #pops the first one which got in the list (pop from the left)
-
-print(queue)
-
-#queue.append(1) #enqueue
-queue.appendleft(1) #double ended queue (add from the left)
-
-print(queue)
-
-queue.pop() #pops the last one like stack (pop from the right)
-print(queue)
+#not Big(O) of n times operation to index an array
+#read and reassigning values
+#constant time operation
+arr[0] = 0
+arr[3] = 0
